@@ -1,0 +1,102 @@
+/* Google Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(25, 25, 25);
+}
+
+.line {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-size: 180%;
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+}
+
+
+/* Animation */
+
+.anim-typewriter-1 {
+    animation: typewriter-1 .5s steps(4) .5s 1 normal both, blinkTextCursor 1000ms steps(44) 3 normal forwards;
+}
+
+.anim-typewriter-2 {
+    animation: typewriter-2 1.7s steps(15) 3s 1 normal both, blinkTextCursor-currentLine 1500ms steps(44) 2.8s 3 normal both;
+}
+
+.anim-typewriter-3 {
+    animation: typewriter-3 2s steps(25) 7.5s 1 normal both, blinkTextCursor-lastLine 1000ms steps(44) 7s infinite normal both;
+}
+
+@keyframes typewriter-1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 2.5em;
+    }
+}
+
+@keyframes typewriter-2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13em;
+    }
+}
+
+@keyframes typewriter-3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 17em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blinkTextCursor-currentLine {
+    0% {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blinkTextCursor-lastLine {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+}
