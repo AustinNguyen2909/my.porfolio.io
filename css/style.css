@@ -17,6 +17,16 @@ body {
     background-color: rgb(25, 25, 25);
 }
 
+
+/* My first message */
+
+.first-message {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .line {
     text-align: center;
     white-space: nowrap;
@@ -27,6 +37,22 @@ body {
     top: 50%;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
+}
+
+.my-info {
+    color: #16d0ff;
+    text-decoration: underline;
+}
+
+.my-info:hover {
+    cursor: pointer;
+    color: #167bff;
+}
+
+.first-message img {
+    height: 100%;
+    width: auto;
+    margin: .5em auto;
 }
 
 
@@ -41,7 +67,15 @@ body {
 }
 
 .anim-typewriter-3 {
-    animation: typewriter-3 2s steps(25) 7.5s 1 normal both, blinkTextCursor-lastLine 1000ms steps(44) 7s infinite normal both;
+    animation: typewriter-3 2s steps(25) 7.5s 1 normal both, blinkTextCursor-currentLine 1500ms steps(44) 7s 3 normal both;
+}
+
+.anim-typewriter-4 {
+    animation: typewriter-4 1.2s steps(13) 11.5s 1 normal both, blinkTextCursor-lastLine 1000ms steps(44) 11s infinite normal both;
+}
+
+.anim-clickme {
+    animation: click-me 1s steps(10) 13.5s infinite normal both;
 }
 
 @keyframes typewriter-1 {
@@ -68,6 +102,15 @@ body {
     }
     to {
         width: 17em;
+    }
+}
+
+@keyframes typewriter-4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 10em;
     }
 }
 
@@ -98,5 +141,17 @@ body {
     }
     to {
         border-right-color: rgba(255, 255, 255, .75);
+    }
+}
+
+@keyframes click-me {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
