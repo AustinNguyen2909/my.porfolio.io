@@ -1,0 +1,114 @@
+/* about me section*/
+
+.about-me {
+    width: 100%;
+    height: 23em;
+    overflow: hidden;
+    background-color: #0059ff;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-info {
+    width: 80%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    padding: .5em;
+    margin: .5em 0;
+    display: flex;
+}
+
+.about-me-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.about-me-img {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-me-info img {
+    padding: .5em;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .about-me-text h1 {
+        font-size: 3em;
+    }
+    .about-me-text h4 {
+        font-size: 1.5em;
+    }
+    .about-me-text p {
+        font-size: .8em;
+    }
+    .about-me {
+        height: 26em;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-me-text h1 {
+        font-size: 5em;
+    }
+}
+
+
+/* particle background*/
+
+
+/* ---- reset ---- */
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 20em;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: 50% 50%;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
