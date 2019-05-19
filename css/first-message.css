@@ -136,3 +136,9 @@
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .first-message p {
+        font-size: 1.2em;
+    }
+}
