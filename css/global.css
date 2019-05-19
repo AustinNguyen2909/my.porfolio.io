@@ -6,12 +6,10 @@
 
 html {
     min-height: 100%;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
 body {
-    height: calc(100vh - 8em);
     color: rgba(255, 255, 255, .75);
     font-family: 'Anonymous Pro', monospace;
     background-color: rgb(25, 25, 25);

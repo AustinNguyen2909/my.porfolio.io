@@ -2,20 +2,23 @@
 
 .about-me {
     width: 100%;
-    height: 23em;
+    height: 38em;
     overflow: hidden;
     background-color: #0059ff;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .about-me-info {
     width: 80%;
+    height: calc(100% - 1em);
     background-color: rgba(255, 255, 255, .5);
     border-radius: 5px;
     padding: .5em;
     margin: .5em 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me-text {
@@ -25,18 +28,32 @@
     text-align: center;
 }
 
-.about-me-img {
+.about-me-img1 {
+    display: flex;
+}
+
+.about-me-img2 {
+    display: none;
+}
+
+.about-me-img1,
+.about-me-img2 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.about-me-info img {
+.about-me-img2 img {
     padding: .5em;
     width: 100%;
 }
 
-@media (max-width: 768px) {
+.about-me-img1 img {
+    padding: .5em;
+    width: 70%;
+}
+
+@media only screen and (min-width: 768px) {
     .about-me-text h1 {
         font-size: 3em;
     }
@@ -48,6 +65,22 @@
     }
     .about-me {
         height: 26em;
+    }
+    .about-me-img1 {
+        display: none;
+    }
+    .about-me-img2 {
+        display: flex;
+    }
+    .about-me {
+        height: 23em;
+    }
+    .about-me-img1,
+    .about-me-img2 {
+        height: inherit;
+    }
+    .about-me-text {
+        height: inherit;
     }
 }
 
@@ -74,7 +107,7 @@ canvas {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 20em;
+    height: 23em;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,4 +144,17 @@ canvas {
 #stats {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
+}
+
+
+/* my-projects section */
+
+.my-projects {
+    min-height: 1000px;
+    background-color: aquamarine;
+}
+
+.my-projects2 {
+    min-height: 1000px;
+    background-color: black;
 }
