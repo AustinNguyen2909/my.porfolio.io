@@ -23,7 +23,7 @@ $(document).ready(function() { // Tells the function to wait to preform until ev
             SectionOneOffset = $('#navbar').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
             SectionTwoOffset = $('.about-me').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
         SectionThreeOffset = $('.my-projects').offset().top;
-        SectionFourOffset = $('.my-contact').offset().top;
+        SectionFourOffset = $('.my-skills').offset().top;
 
         if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
             $(".item-0").addClass("active"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
