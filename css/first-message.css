@@ -8,6 +8,10 @@
     margin-top: 6em;
 }
 
+.first-message p {
+    font-size: 2em;
+}
+
 .line {
     text-align: center;
     white-space: nowrap;
