@@ -265,8 +265,23 @@ canvas {
 /* my-skills section */
 
 .my-skills {
-    min-height: 200px;
+    min-height: 150px;
     background-color: rgb(15, 15, 15);
+}
+
+.skill-set {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-set img {
+    height: 80%;
+    width: 60%;
+}
+
+.skill-each {
+    justify-content: center;
+    align-items: center;
 }
 
 
