@@ -60,10 +60,12 @@
 
 .about-me-quote h1 {
     font-size: 2em;
+    color: white;
 }
 
 .about-me-quote p {
     font-size: .6em;
+    color: #cccccc;
 }
 
 .about-me-info {
@@ -175,16 +177,111 @@ canvas {
 /* my-projects section */
 
 .my-projects {
-    min-height: 1000px;
-    background-color: aquamarine;
+    min-height: 500px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.my-projects h1 {
+    font-weight: 400;
+}
+
+.projects-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    height: 23em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.project-item img {}
+
+.project-img-01 {
+    background-image: url('../img/project-01.png');
+}
+
+.project-img-02 {
+    background-image: url('../img/project-02.png');
+}
+
+.project-img-03 {
+    background-image: url('../img/project-03.png');
+}
+
+.project-img-04 {
+    background-image: url('../img/project-04.png');
+}
+
+.project-img-01,
+.project-img-02,
+.project-img-03,
+.project-img-04 {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, .8);
+    transform: scale(1);
+    transition: all .6s;
+}
+
+.project-item:hover>.project-img-01,
+.project-item:hover>.project-img-02,
+.project-item:hover>.project-img-03,
+.project-item:hover>.project-img-04 {
+    box-shadow: inset 0px 0px 5px 4px rgba(255, 255, 255, .8);
+    transform: scale(1.05)
+}
+
+.project-item h3 {
+    display: block;
+    width: 100%;
+}
+
+.project-item a {
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 255, 21);
+    width: 100%;
+    height: 100%;
+}
+
+.project-item a:hover {
+    color: rgb(2, 163, 29);
 }
 
 
 /* my-skills section */
 
 .my-skills {
-    min-height: 1000px;
+    min-height: 200px;
+    background-color: rgb(15, 15, 15);
+}
+
+
+/* footer */
+
+footer {
+    min-height: 50px;
     background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
 }
 
 
@@ -233,5 +330,17 @@ canvas {
 @media (min-width: 992px) {
     .about-me-text h1 {
         font-size: 5em;
+    }
+}
+
+@media (max-width: 575px) {
+    .project-item {
+        height: 36em;
+    }
+    .project-img-01,
+    .project-img-02,
+    .project-img-03,
+    .project-img-04 {
+        height: 80%;
     }
 }
