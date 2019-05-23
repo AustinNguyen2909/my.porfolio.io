@@ -285,6 +285,59 @@ canvas {
 }
 
 
+/* contact */
+
+.contact {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact:hover {
+    height: 250px;
+}
+
+.link {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+}
+
+.link-1,
+.link-2,
+.link-3 {
+    transform: scale(0);
+}
+
+.link-1 {
+    transition: all .3s;
+}
+
+.link-2 {
+    transition: all .6s;
+}
+
+.link-3 {
+    transition: all .9s;
+}
+
+.link:hover {
+    background-color: #444444;
+}
+
+.contact:hover>.link-1,
+.contact:hover>.link-2,
+.contact:hover>.link-3 {
+    transform: scale(.8);
+}
+
+
 /* footer */
 
 footer {
