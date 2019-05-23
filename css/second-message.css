@@ -313,6 +313,7 @@ canvas {
 .link-2,
 .link-3 {
     transform: scale(0);
+    padding-bottom: 14px;
 }
 
 .link-1 {
